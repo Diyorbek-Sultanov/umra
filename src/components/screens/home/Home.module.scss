@@ -1,0 +1,23 @@
+.home {
+	@apply flex flex-col items-center justify-center text-white;
+
+	.content {
+		@apply text-center max-w-[940px] mt-28;
+
+		h1 {
+			@apply text-6xl font-bold mb-11;
+		}
+
+		p {
+			@apply text-base mb-5;
+		}
+
+		.btn {
+			@apply bg-btnBg p-3 rounded-3xl text-black font-medium transition-colors;
+
+			&:hover {
+				background-color: darken(#f9b88e, 10%);
+			}
+		}
+	}
+}

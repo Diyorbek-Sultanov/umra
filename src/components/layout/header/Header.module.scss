@@ -1,0 +1,15 @@
+.header {
+	@apply p-7 text-white flex items-center justify-between;
+
+	.list {
+		@apply flex items-center gap-x-8;
+
+		.link {
+			@apply cursor-pointer opacity-70 text-sm hover:opacity-100 transition-opacity;
+		}
+	}
+
+	.tel {
+		@apply opacity-70 text-sm;
+	}
+}
