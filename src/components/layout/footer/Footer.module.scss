@@ -1,3 +1,84 @@
 .footer {
-	
+	@apply bg-black text-white py-10 px-9;
+
+	.title {
+		@apply font-semibold text-4xl mb-6 text-center;
+	}
+
+	.sub {
+		@apply text-sm opacity-70 mb-7 text-center;
+	}
+
+	.form {
+		@apply mb-20 flex items-center justify-center gap-x-1;
+
+		.input {
+			@apply outline-none bg-black bg-opacity-70 border border-orange py-3 px-8 rounded-tl-[20px]  rounded-bl-[20px] placeholder:text-white text-base;
+		}
+
+		.btn {
+			@apply bg-orange h-[50px] py-3 px-4 text-black text-sm rounded-tr-[20px] rounded-br-[20px] font-semibold transition-colors;
+
+			&:hover {
+				background-color: darken(#f9b88e, 10%);
+			}
+		}
+	}
+
+	.wrapper {
+		@apply grid grid-cols-footer gap-x-4 px-3 place-items-center;
+
+		.info {
+			h1 {
+				@apply mb-6;
+			}
+
+			p {
+				@apply text-gray-400 mb-4;
+			}
+
+			.social {
+				@apply flex items-center gap-x-3;
+
+				div {
+					@apply bg-social rounded-full p-3 cursor-pointer transition-colors;
+
+					svg {
+						@apply fill-orange;
+					}
+
+					&:hover {
+						background-color: #f9b88e;
+
+						svg {
+							fill: black;
+						}
+					}
+				}
+			}
+		}
+
+		.content {
+			@apply flex gap-x-24;
+
+			.list {
+				@apply flex flex-col gap-y-2;
+
+				h2 {
+					@apply text-2xl font-semibold mb-4;
+				}
+			}
+
+			.contact {
+				h2 {
+					@apply text-2xl font-semibold mb-4;
+				}
+
+				.address,
+				.tel {
+					@apply flex gap-x-2 mb-3 text-gray-400;
+				}
+			}
+		}
+	}
 }
