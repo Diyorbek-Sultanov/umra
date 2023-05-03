@@ -14,7 +14,7 @@
 			}
 
 			.btn {
-				@apply bg-btnBg py-3 px-5 mb-10 rounded-3xl text-black font-medium transition-colors text-sm;
+				@apply bg-btnBg py-3 px-5 mb-14 rounded-3xl text-black font-medium transition-colors text-sm;
 
 				&:hover {
 					background-color: darken(#f9b88e, 10%);

@@ -6,6 +6,8 @@ import Button from '@/components/ui/button/Button'
 
 import styles from './Home.module.scss'
 import Hotel from './hotel/Hotel'
+import Inclusive from './inclusive/Inclusive'
+import Learn from './learn/Learn'
 import Detail from './offer-detail/Detail'
 import Offers from './offers/Offers'
 import Reviews from './reviews/Reviews'
@@ -31,6 +33,8 @@ const Home: FC = () => {
 					<Offers />
 					<Detail />
 					<Hotel />
+					<Inclusive />
+					<Learn />
 				</div>
 			</div>
 		</Layout>

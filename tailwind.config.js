@@ -17,7 +17,11 @@ module.exports = {
 				orange: '#f9b88e'
 			},
 			gridTemplateColumns: {
-				offerDetail: '8fr 4fr'
+				offerDetail: '8fr 4fr',
+				learn: '7fr 5fr'
+			},
+			rotate: {
+				rot: '99deg'
 			}
 		}
 	},
