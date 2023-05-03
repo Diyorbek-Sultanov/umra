@@ -23,11 +23,14 @@ const Layout: FC<PropsWithChildren<IMeta>> = ({
 }) => {
 	return (
 		<Meta title={title} description={description}>
-			<div className={clsx('min-h-screen overflow-hidden', poppins.className)}>
-				<div className='min-h-[100vh] bg-hero bg-no-repeat bg-cover bg-top'>
-					<Header />
-					<main className='h-screen'>{children}</main>
-				</div>
+			<div
+				className={clsx(
+					'flex flex-col min-h-screen overflow-hidden',
+					poppins.className
+				)}
+			>
+				<Header />
+				<main className='flex-grow'>{children}</main>
 				<Footer />
 			</div>
 		</Meta>

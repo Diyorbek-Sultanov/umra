@@ -1,5 +1,7 @@
 .home {
-	@apply flex flex-col items-center justify-center text-white;
+	.wrapper {
+		@apply bg-hero bg-cover bg-no-repeat h-screen bg-top flex flex-col items-center text-white;
+	}
 
 	.content {
 		@apply text-center max-w-[940px] mt-28;
@@ -13,11 +15,15 @@
 		}
 
 		.btn {
-			@apply bg-btnBg p-3 rounded-3xl text-black font-medium transition-colors;
+			@apply bg-btnBg p-3 rounded-3xl text-black font-medium transition-colors text-sm;
 
 			&:hover {
 				background-color: darken(#f9b88e, 10%);
 			}
 		}
+	}
+
+	.container {
+		@apply max-w-[1320px] mx-auto px-3;
 	}
 }

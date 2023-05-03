@@ -12,6 +12,12 @@ module.exports = {
 			},
 			backgroundColor: {
 				btnBg: '#f9b88e'
+			},
+			colors: {
+				orange: '#f9b88e'
+			},
+			gridTemplateColumns: {
+				offerDetail: '8fr 4fr'
 			}
 		}
 	},

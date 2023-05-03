@@ -1,0 +1,39 @@
+.detail {
+	@apply mb-20;
+
+	.wrapper {
+		@apply grid grid-cols-offerDetail gap-x-9;
+
+		.content {
+			.title {
+				@apply text-3xl mb-4 font-semibold;
+			}
+
+			.about {
+				@apply leading-6 font-medium text-base mb-4 max-w-[480px];
+			}
+
+			.btn {
+				@apply bg-btnBg py-3 px-5 mb-10 rounded-3xl text-black font-medium transition-colors text-sm;
+
+				&:hover {
+					background-color: darken(#f9b88e, 10%);
+				}
+			}
+
+			.list {
+				@apply flex items-center flex-wrap gap-10;
+
+				.li {
+					@apply flex items-center gap-x-6;
+
+					div {
+						h6 {
+							@apply font-semibold mb-2;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.review {
+	@apply my-14;
+
+	.wrapper {
+		@apply grid grid-cols-4 gap-4 place-items-center;
+
+		.item {
+			.star {
+				@apply flex items-center mb-2 gap-x-2;
+			}
+
+			span {
+				@apply text-gray-500 font-medium;
+			}
+		}
+	}
+}
