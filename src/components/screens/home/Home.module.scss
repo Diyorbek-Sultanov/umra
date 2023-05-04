@@ -7,7 +7,7 @@
 		@apply text-center max-w-[940px] mt-28;
 
 		h1 {
-			@apply text-6xl font-bold mb-11;
+			@apply sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-11;
 		}
 
 		p {
@@ -24,6 +24,6 @@
 	}
 
 	.container {
-		@apply max-w-[1320px] mx-auto px-3;
+		@apply max-w-[1320px] mx-auto px-4;
 	}
 }

@@ -9,7 +9,7 @@ const Learn: FC = () => {
 	return (
 		<div className={styles.learn}>
 			<div className={styles.wrapper}>
-				<div className='bg-orange rotate-rot w-[430px] h-[300px] mt-14'></div>
+				<div className={styles.big}></div>
 				<div className={styles.content}>
 					<h1>Learn Correctly How to Perfom Umrah</h1>
 					<p>

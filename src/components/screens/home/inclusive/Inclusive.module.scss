@@ -2,14 +2,14 @@
 	@apply mb-20;
 
 	.sub {
-		@apply text-gray-500 w-[800px] mx-auto text-center leading-8 font-medium mb-10;
+		@apply text-gray-500 max-sm:w-[350px] md:w-[650px] lg:w-[800px] mx-auto text-center leading-8 font-medium mb-10;
 	}
 
 	.wrapper {
-		@apply grid grid-cols-4 gap-x-8;
+		@apply grid max-xs:grid-cols-1 sm:grid-cols-responsiveSm md:grid-cols-responsiveMd lg:grid-cols-4 place-content-center gap-8;
 
 		.item {
-			@apply text-center;
+			@apply xs:text-left sm:text-center lg:text-center;
 
 			.img {
 				@apply rounded-3xl;

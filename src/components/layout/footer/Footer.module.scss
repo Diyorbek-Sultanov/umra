@@ -26,9 +26,10 @@
 	}
 
 	.wrapper {
-		@apply grid grid-cols-footer gap-x-4 px-3 place-items-center;
+		@apply grid lg:grid-cols-footer gap-x-4 px-3 place-items-center;
 
 		.info {
+			@apply sm:w-[450px]  max-xs:mb-12 sm:mb-16;
 			h1 {
 				@apply mb-6;
 			}
@@ -59,7 +60,7 @@
 		}
 
 		.content {
-			@apply flex gap-x-24;
+			@apply flex flex-wrap sm:justify-center gap-24;
 
 			.list {
 				@apply flex flex-col gap-y-2;

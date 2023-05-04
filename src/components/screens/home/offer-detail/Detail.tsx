@@ -25,7 +25,7 @@ const Detail: FC = () => {
 						))}
 					</ul>
 				</div>
-				<div className='bg-orange w-[500px] h-[70vh] -rotate-12'></div>
+				<div className={styles.big}></div>
 			</div>
 		</div>
 	)

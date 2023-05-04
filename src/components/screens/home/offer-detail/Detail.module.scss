@@ -2,7 +2,7 @@
 	@apply mb-20;
 
 	.wrapper {
-		@apply grid grid-cols-offerDetail gap-x-9;
+		@apply grid xl:grid-cols-offerDetail gap-x-9;
 
 		.content {
 			.title {
@@ -10,7 +10,7 @@
 			}
 
 			.about {
-				@apply leading-6 font-medium text-base mb-4 max-w-[480px];
+				@apply leading-6 font-medium text-base mb-4 max-sm:w-[300px] md:w-[420px] lg:max-w-[480px];
 			}
 
 			.btn {
@@ -34,6 +34,10 @@
 					}
 				}
 			}
+		}
+
+		.big {
+			@apply sm:h-0 md:h-0 lg:h-0 xl:h-[70vh] bg-orange w-[500px] -rotate-12;
 		}
 	}
 }

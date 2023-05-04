@@ -20,10 +20,17 @@ module.exports = {
 			gridTemplateColumns: {
 				offerDetail: '8fr 4fr',
 				learn: '7fr 5fr',
-				footer: '3fr 9fr'
+				footer: '3fr 9fr',
+				responsiveMd: 'repeat(2, 300px)',
+				responsiveSm: 'repeat(1, 300px)',
+				responsiveRevSm: 'repeat(1, 120px)',
+				responsiveRevMd: 'repeat(2, 120px)'
 			},
 			rotate: {
 				rot: '99deg'
+			},
+			screens: {
+				xs: '599px'
 			}
 		}
 	},

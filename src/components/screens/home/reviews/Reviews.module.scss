@@ -2,7 +2,7 @@
 	@apply my-20;
 
 	.wrapper {
-		@apply grid grid-cols-4 gap-4 place-items-center;
+		@apply grid sm:grid-cols-responsiveRevSm md:grid-cols-responsiveRevMd lg:grid-cols-4 gap-6 max-sm:place-content-center lg:place-items-center;
 
 		.item {
 			.star {
