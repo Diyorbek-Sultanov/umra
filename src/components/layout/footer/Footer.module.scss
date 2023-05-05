@@ -5,23 +5,11 @@
 		@apply font-semibold text-4xl mb-6 text-center;
 	}
 
-	.sub {
-		@apply text-sm opacity-70 mb-7 text-center;
-	}
-
 	.form {
-		@apply mb-20 flex items-center justify-center gap-x-1;
-
-		.input {
-			@apply outline-none bg-black bg-opacity-70 border border-orange py-3 px-8 rounded-tl-[20px]  rounded-bl-[20px] placeholder:text-white text-base;
-		}
+		@apply py-12 px-5 bg-form max-sm:w-[320px] md:w-[380px] lg:w-[400px] mx-auto rounded-xl mb-8;
 
 		.btn {
-			@apply bg-orange h-[50px] py-3 px-4 text-black text-sm rounded-tr-[20px] rounded-br-[20px] font-semibold transition-colors;
-
-			&:hover {
-				background-color: darken(#f9b88e, 10%);
-			}
+			@apply bg-orange py-3 px-3 w-full rounded-3xl text-black font-medium text-base;
 		}
 	}
 

@@ -7,11 +7,11 @@
 		.content {
 			@apply md:w-[650px];
 			h1 {
-				@apply font-semibold xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-5 leading-[56px];
+				@apply font-semibold max-xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-5 leading-[56px];
 			}
 
 			p {
-				@apply text-gray-500 font-medium leading-7 mb-8;
+				@apply max-xs:w-[65%] text-gray-500 font-medium leading-7 mb-8;
 			}
 
 			.btn {

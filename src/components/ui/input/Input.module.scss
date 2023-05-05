@@ -1,0 +1,7 @@
+.wrap {
+	@apply relative;
+
+	.input {
+		@apply outline-none py-2 border-b mb-3 px-3 w-full text-black rounded-3xl;
+	}
+}

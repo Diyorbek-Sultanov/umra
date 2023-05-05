@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { FC, useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { IoCloseSharp } from 'react-icons/io5'
 
 import styles from './Header.module.scss'
@@ -30,7 +31,10 @@ const Header: FC = () => {
 					</li>
 				))}
 			</ul>
-			<p className={styles.tel}>+998907774433</p>
+			<p className={styles.tel}>
+				<BsFillTelephoneFill />
+				+998907774433
+			</p>
 		</header>
 	)
 }
