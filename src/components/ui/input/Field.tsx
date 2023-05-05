@@ -4,7 +4,7 @@ import { IField } from '@/types/input.types'
 
 import styles from './Input.module.scss'
 
-const Input: FC = forwardRef<HTMLInputElement, IField>(
+const Field: FC = forwardRef<HTMLInputElement, IField>(
 	({ type = 'text', ...rest }, ref) => {
 		return (
 			<div className={styles.wrap}>
@@ -20,6 +20,6 @@ const Input: FC = forwardRef<HTMLInputElement, IField>(
 	}
 )
 
-Input.displayName = 'Field'
+Field.displayName = 'Field'
 
-export default Input
+export default Field

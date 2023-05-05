@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import Button from '@/components/ui/button/Button'
-import Input from '@/components/ui/input/Input'
+import Field from '@/components/ui/input/Field'
 
 import styles from './Footer.module.scss'
 
@@ -9,16 +9,16 @@ const FooterForm: FC = () => {
 	return (
 		<form className={styles.form}>
 			<div>
-				<span>Email</span>
-				<Input />
+				<span>Ism</span>
+				<Field />
 			</div>
 			<div>
-				<span>Name</span>
-				<Input />
+				<span>Familiya</span>
+				<Field />
 			</div>
 			<div>
-				<span>Message</span>
-				<Input />
+				<span>Telefon raqam</span>
+				<Field />
 			</div>
 			<Button className={styles.btn} type='submit'>
 				Send

@@ -11,6 +11,12 @@
 		.btn {
 			@apply bg-orange py-3 px-3 w-full rounded-3xl text-black font-medium text-base;
 		}
+
+		> div {
+			> span {
+				@apply block mb-2;
+			}
+		}
 	}
 
 	.wrapper {
