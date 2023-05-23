@@ -19,7 +19,7 @@ const InclusiveItem: FC<{ item: IInclusiveData }> = ({ item }) => {
 			/>
 			<h4>{item.title}</h4>
 			<p>{item.descr}</p>
-			<Button className={styles.btn}>Read more</Button>
+			<Button className={styles.btn}>Ko'proq o'qish</Button>
 		</div>
 	)
 }

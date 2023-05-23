@@ -18,13 +18,9 @@ const Home: FC = () => {
 			<div className={styles.home}>
 				<div className={styles.wrapper}>
 					<div className={styles.content}>
-						<h1>Economy Hajj & Umrah</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-							eos, voluptate laboriosam quod reiciendis maiores recusandae
-							voluptatem a hic, similique aperiam in provident quas? Nisi
-						</p>
-						<Button className={styles.btn}>Get a Package price</Button>
+						<h1>Kam xarajatli Hajj va Umra safarlari</h1>
+						<p>Biz bilan hoziroq Hajj va Umra safarlariga otlaning</p>
+						<Button className={styles.btn}>Paket narxini bilish</Button>
 					</div>
 				</div>
 				<div className={styles.container}>

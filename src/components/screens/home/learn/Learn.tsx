@@ -11,7 +11,7 @@ const Learn: FC = () => {
 			<div className={styles.wrapper}>
 				<div className={styles.big}></div>
 				<div className={styles.content}>
-					<h1>Learn Correctly How to Perfom Umrah</h1>
+					<h1>Umrani to'g'ri o'tkazishni o'rganing</h1>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
 						sit aperiam eius nostrum totam consectetur vel hic sapiente quam,
@@ -21,7 +21,7 @@ const Learn: FC = () => {
 					</p>
 					<Button className={styles.btn}>
 						<BsFillPlayFill fontSize={25} />
-						Watch video
+						Videoni ko'rish
 					</Button>
 				</div>
 			</div>

@@ -8,7 +8,7 @@ import styles from './Hotel.module.scss'
 const Hotel: FC = () => {
 	return (
 		<div className={styles.hotel}>
-			<Heading>Our Hotels</Heading>
+			<Heading>Bizning mehmonxonalar</Heading>
 			<div className={styles.wrapper}>
 				<Image
 					src={'/images/hilton-logo.png'}

@@ -11,14 +11,9 @@ const Detail: FC = () => {
 		<div className={styles.detail}>
 			<div className={styles.wrapper}>
 				<div className={styles.content}>
-					<h2 className={styles.title}>What Do We Offer</h2>
-					<p className={styles.about}>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum iusto
-						magni repellendus at quam illum voluptates voluptate, recusandae
-						fuga alias dolorum molestias dolore architecto nulla ipsum? Eaque
-						dignissimos atque laborum!
-					</p>
-					<Button className={styles.btn}>Learn More</Button>
+					<h2 className={styles.title}>Biz nimani taklik etamiz</h2>
+					<p className={styles.about}>Bir nima takliflar</p>
+					<Button className={styles.btn}>Ko'proq ko'rish</Button>
 					<ul className={styles.list}>
 						{detailData.map(item => (
 							<ListItem item={item} key={item.id} />

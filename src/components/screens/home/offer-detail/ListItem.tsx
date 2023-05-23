@@ -10,8 +10,8 @@ const ListItem: FC<{ item: IDetailData }> = ({ item }) => {
 		<li className={styles.li}>
 			<Image src={item.img} width={30} height={30} alt={item.title} />
 			<div>
-				<h6>Hotel Booking</h6>
-				<p>Lorem ipsum dolor sit amet.</p>
+				<h6>{item.title}</h6>
+				<p>{item.descr}</p>
 			</div>
 		</li>
 	)

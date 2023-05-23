@@ -24,7 +24,7 @@ const OfferItem: FC<{ item: IOfferData }> = ({ item }) => {
 			<h5 className={styles.price}>
 				{formatCurrensy(Number(item.price))} <span>/person</span>
 			</h5>
-			<p className={styles.durat}>Package Duration ({item.duration} Days)</p>
+			<p className={styles.durat}>Paket vaqti ({item.duration} kun)</p>
 			<Button className={styles.btn}>Detail</Button>
 		</div>
 	)

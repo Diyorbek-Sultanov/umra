@@ -24,7 +24,8 @@
 
 		.info {
 			@apply sm:w-[450px]  max-xs:mb-12 sm:mb-16;
-			h1 {
+
+			.logo {
 				@apply mb-6;
 			}
 

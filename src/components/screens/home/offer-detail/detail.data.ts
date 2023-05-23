@@ -4,37 +4,37 @@ export const detailData: IDetailData[] = [
 	{
 		id: 1,
 		img: '/images/hotel.png',
-		title: 'Hotel Booking',
+		title: 'Mehmonxona band qilish',
 		descr: 'Lorem ipsum dolor sit amet.'
 	},
 	{
 		id: 2,
 		img: '/images/hajj-man.png',
-		title: 'Hotel Booking',
+		title: 'Hajj takliflari',
 		descr: 'Lorem ipsum dolor sit amet.'
 	},
 	{
 		id: 3,
 		img: '/images/visa.png',
-		title: 'Hotel Booking',
+		title: 'Visa rasmiylashtirish',
 		descr: 'Lorem ipsum dolor sit amet.'
 	},
 	{
 		id: 4,
 		img: '/images/hajj-1.png',
-		title: 'Hotel Booking',
+		title: 'Umra takliflari',
 		descr: 'Lorem ipsum dolor sit amet.'
 	},
 	{
 		id: 5,
 		img: '/images/globus.png',
-		title: 'Hotel Booking',
+		title: 'Ziyorat safarlari',
 		descr: 'Lorem ipsum dolor sit amet.'
 	},
 	{
 		id: 6,
 		img: '/images/kaaba.png',
-		title: 'Hotel Booking',
+		title: 'Umrah paketlari',
 		descr: 'Lorem ipsum dolor sit amet.'
 	}
 ]
