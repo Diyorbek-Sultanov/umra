@@ -5,20 +5,6 @@
 		@apply font-semibold text-4xl mb-6 text-center;
 	}
 
-	.form {
-		@apply py-12 px-5 bg-form max-sm:w-[320px] md:w-[380px] lg:w-[400px] mx-auto rounded-xl mb-8;
-
-		.btn {
-			@apply bg-orange py-3 px-3 w-full rounded-3xl text-black font-medium text-base;
-		}
-
-		> div {
-			> span {
-				@apply block mb-2;
-			}
-		}
-	}
-
 	.wrapper {
 		@apply grid lg:grid-cols-footer gap-x-4 px-3 place-items-center;
 

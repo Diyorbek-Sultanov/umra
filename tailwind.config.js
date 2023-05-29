@@ -12,8 +12,7 @@ module.exports = {
 			},
 			backgroundColor: {
 				btnBg: '#f9b88e',
-				social: '#232323',
-				form: 'rgba(255, 255, 255, .3)'
+				social: '#232323'
 			},
 			colors: {
 				orange: '#f9b88e'
