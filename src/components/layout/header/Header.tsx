@@ -13,34 +13,32 @@ const Header: FC = () => {
 
 	return (
 		<header className={styles.header}>
-			<Image
-				src={'/images/header-logo.png'}
-				width={50}
-				height={50}
-				alt='Logo'
-			/>
-			<div className={styles.menu} onClick={() => setOpen(prev => !prev)}>
-				{open ? (
-					<IoCloseSharp fontSize={25} fill='white' />
-				) : (
-					<BiMenuAltRight fontSize={25} fill='white' />
-				)}
+			<div className={styles.container}>
+				<Image
+					src={'/images/header-logo.png'}
+					width={50}
+					height={50}
+					alt='Logo'
+				/>
+				<div className={styles.menu} onClick={() => setOpen(prev => !prev)}>
+					{open ? (
+						<IoCloseSharp fontSize={25} fill='white' />
+					) : (
+						<BiMenuAltRight fontSize={25} fill='white' />
+					)}
+				</div>
+				<ul
+					className={clsx(styles.list, {
+						[styles.active]: open === true
+					})}
+				>
+					{navData.map((nav, index) => (
+						<li className={styles.link} key={index}>
+							{nav.label}
+						</li>
+					))}
+				</ul>
 			</div>
-			<ul
-				className={clsx(styles.list, {
-					[styles.active]: open === true
-				})}
-			>
-				{navData.map((nav, index) => (
-					<li className={styles.link} key={index}>
-						{nav.label}
-					</li>
-				))}
-			</ul>
-			<p className={styles.tel}>
-				<BsFillTelephoneFill />
-				+998907774433
-			</p>
 		</header>
 	)
 }

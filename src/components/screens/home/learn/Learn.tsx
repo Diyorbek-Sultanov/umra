@@ -4,6 +4,7 @@ import { BsFillPlayFill } from 'react-icons/bs'
 import Button from '@/components/ui/button/Button'
 
 import styles from './Learn.module.scss'
+import SendForm from './SendForm'
 
 const Learn: FC = () => {
 	return (
@@ -25,6 +26,8 @@ const Learn: FC = () => {
 					</Button>
 				</div>
 			</div>
+
+			<SendForm />
 		</div>
 	)
 }

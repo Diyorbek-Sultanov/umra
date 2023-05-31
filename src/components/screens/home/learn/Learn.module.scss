@@ -1,5 +1,5 @@
 .learn {
-	@apply mb-40;
+	@apply mb-24;
 
 	.wrapper {
 		@apply grid lg:grid-cols-learn gap-x-6;
@@ -21,6 +21,38 @@
 
 		.big {
 			@apply bg-orange rotate-rot w-[430px] xs:h-0 sm:h-0 md:h-0 lg:h-[300px] mt-14;
+		}
+	}
+
+	.send {
+		@apply max-w-sm mt-40 mb-12 mx-auto;
+
+		.form {
+			@apply mt-4 bg-neutral-100 py-6 px-5 flex flex-col gap-4;
+
+			.label {
+				@apply mb-4;
+
+				span {
+					@apply mb-3 block;
+				}
+
+				.field {
+					@apply bg-white rounded-md border-b-2  border-gray-300 focus:border-purple-500 transition-colors ease-in focus:placeholder:text-purple-400;
+				}
+
+				.textarea {
+					@apply resize-none w-full outline-none py-2 px-3 appearance-none overflow-hidden;
+				}
+
+				.textAreaErr {
+					@apply text-rose-400 text-sm;
+				}
+			}
+
+			.btn {
+				@apply bg-green-400 rounded-md py-3 px-5 text-white text-base transition-all ease-in hover:bg-green-500 focus:shadow-2xl;
+			}
 		}
 	}
 }

@@ -1,7 +1,17 @@
+$error: #d9898d;
+
 .wrap {
 	@apply relative;
 
 	.input {
-		@apply outline-none py-2 border-b mb-3 px-3 w-full text-black rounded-3xl;
+		@apply outline-none py-2 px-3 w-full text-black;
+	}
+
+	.inputErr {
+		border-color: $error !important;
+	}
+
+	.errorMess {
+		@apply mt-2 text-sm text-rose-500;
 	}
 }

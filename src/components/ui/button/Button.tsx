@@ -8,10 +8,11 @@ import styles from './Button.module.scss'
 const Button: FC<PropsWithChildren<IButton>> = ({
 	children,
 	className,
+	type,
 	...rest
 }) => {
 	return (
-		<button className={clsx(styles.button, className)} {...rest}>
+		<button className={clsx(styles.button, className)} type={type} {...rest}>
 			{children}
 		</button>
 	)

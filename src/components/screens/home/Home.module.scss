@@ -4,10 +4,14 @@
 	}
 
 	.content {
-		@apply text-center max-w-[940px] mt-[13rem];
+		@apply text-center  flex items-center flex-col  lg:flex-row gap-9 justify-center mt-[13rem];
+
+		> div {
+			@apply min-w-min;
+		}
 
 		h1 {
-			@apply sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-11;
+			@apply max-sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-11;
 		}
 
 		p {
@@ -23,7 +27,7 @@
 		}
 
 		.form {
-			@apply sticky 2xl:relative lg:left-0 2xl:-left-[75%] 2xl:-top-[50px] py-10 px-5 bg-black max-sm:w-[320px] md:w-[380px] lg:w-[400px] mx-auto rounded-xl mb-8;
+			@apply py-10 px-5 bg-black max-sm:w-[320px] md:w-[380px] lg:w-[400px] mx-auto rounded-xl mb-8;
 
 			.btn {
 				@apply bg-orange py-3 px-3 w-full rounded-3xl text-black font-medium text-base;

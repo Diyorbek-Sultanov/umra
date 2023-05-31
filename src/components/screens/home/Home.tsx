@@ -19,9 +19,11 @@ const Home: FC = () => {
 			<div className={styles.home}>
 				<div className={styles.wrapper}>
 					<div className={styles.content}>
-						<h1>Kam xarajatli Hajj va Umra safarlari</h1>
-						<p>Biz bilan hoziroq Hajj va Umra safarlariga otlaning</p>
-						<Button className={styles.btn}>Paket narxini bilish</Button>
+						<div>
+							<h1>Kam xarajatli Hajj va Umra safarlari</h1>
+							<p>Biz bilan hoziroq Hajj va Umra safarlariga otlaning</p>
+							<Button className={styles.btn}>Paket narxini bilish</Button>
+						</div>
 						<FooterForm />
 					</div>
 				</div>

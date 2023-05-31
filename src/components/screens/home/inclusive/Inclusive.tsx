@@ -10,7 +10,7 @@ const Inclusive: FC = () => {
 	return (
 		<div className={styles.inclu}>
 			<Heading>Paketlarimizga quyidagilar kiradi</Heading>
-			<p className={styles.sub}>Biz nima yozuvlar...</p>
+			<p className={styles.sub}>Bir nima yozuvlar...</p>
 			<div className={styles.wrapper}>
 				{inclusiveData.map(item => (
 					<InclusiveItem item={item} key={item.id} />
