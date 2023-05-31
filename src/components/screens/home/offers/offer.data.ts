@@ -7,7 +7,8 @@ export const offerData: IOfferData[] = [
 		title: 'Hajj paket',
 		duration: '42-45',
 		type: 'Classic',
-		price: '15000'
+		price: '15000',
+		slug: 'classic'
 	},
 	{
 		id: 2,
@@ -15,22 +16,16 @@ export const offerData: IOfferData[] = [
 		title: 'Hajj paket',
 		duration: '42-45',
 		type: 'Biznes',
-		price: '15000'
+		price: '15000',
+		slug: 'buisness'
 	},
 	{
 		id: 3,
 		img: '/images/hajj.jpg',
 		title: 'Hajj paket',
 		duration: '42-45',
-		type: 'Classic',
-		price: '15000'
-	},
-	{
-		id: 4,
-		img: '/images/hajj.jpg',
-		title: 'Hajj paket',
-		duration: '42-45',
-		type: 'Ekanom',
-		price: '15000'
+		type: 'Ekonom',
+		price: '15000',
+		slug: 'ekonom'
 	}
 ]

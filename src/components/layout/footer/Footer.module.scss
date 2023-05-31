@@ -1,10 +1,6 @@
 .footer {
 	@apply bg-black text-white py-10 px-9;
 
-	.title {
-		@apply font-semibold text-4xl mb-6 text-center;
-	}
-
 	.wrapper {
 		@apply grid lg:grid-cols-footer gap-x-4 px-3 place-items-center;
 
@@ -22,8 +18,9 @@
 			.social {
 				@apply flex items-center gap-x-3;
 
+				a,
 				div {
-					@apply bg-social rounded-full p-3 cursor-pointer transition-colors;
+					@apply block bg-social rounded-full p-3 cursor-pointer transition-colors;
 
 					svg {
 						@apply fill-orange;
@@ -47,7 +44,7 @@
 				@apply flex flex-col gap-y-2;
 
 				h2 {
-					@apply text-2xl font-semibold mb-4;
+					@apply text-xl font-semibold mb-4;
 				}
 			}
 
@@ -58,9 +55,13 @@
 
 				.address,
 				.tel {
-					@apply flex gap-x-2 mb-3 text-gray-400;
+					@apply flex gap-x-2 mb-4 text-gray-400;
 				}
 			}
 		}
+	}
+
+	.copy {
+		@apply text-center text-gray-400;
 	}
 }

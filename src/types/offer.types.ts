@@ -5,4 +5,5 @@ export interface IOfferData {
 	title: string
 	price: string | number
 	duration: string
+	slug: string
 }

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { FC } from 'react'
 
 import Button from '@/components/ui/button/Button'
@@ -9,6 +10,8 @@ import styles from './Offers.module.scss'
 import { formatCurrensy } from '@/utils/format-price'
 
 const OfferItem: FC<{ item: IOfferData }> = ({ item }) => {
+	const { push } = useRouter()
+
 	return (
 		<div className={styles.item}>
 			<Image
@@ -25,7 +28,12 @@ const OfferItem: FC<{ item: IOfferData }> = ({ item }) => {
 				{formatCurrensy(Number(item.price))} <span>/person</span>
 			</h5>
 			<p className={styles.durat}>Paket vaqti ({item.duration} kun)</p>
-			<Button className={styles.btn}>Detail</Button>
+			<Button
+				className={styles.btn}
+				onClick={() => push(`offer-detail/${item.slug}`)}
+			>
+				Detail
+			</Button>
 		</div>
 	)
 }

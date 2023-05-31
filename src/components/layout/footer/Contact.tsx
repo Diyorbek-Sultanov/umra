@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { BsTelephoneFill } from 'react-icons/bs'
+import { FiMail } from 'react-icons/fi'
 import { HiMapPin } from 'react-icons/hi2'
 
 import styles from './Footer.module.scss'
@@ -15,6 +16,10 @@ const Contact: FC = () => {
 			<div className={styles.tel}>
 				<BsTelephoneFill fontSize={20} fill='#f9b88e' />
 				+998907775533
+			</div>
+			<div className={styles.tel}>
+				<FiMail fontSize={20} fill='#f9b88e' />
+				bilol12.@mail.ru
 			</div>
 		</div>
 	)

@@ -81,7 +81,9 @@ const SendForm: FC = () => {
 						render={({ field: { value, onChange }, fieldState: { error } }) => (
 							<>
 								<textarea
-									className={clsx(styles.textarea, styles.field)}
+									className={clsx(styles.textarea, styles.field, {
+										[styles.textareaErr]: !!error
+									})}
 									rows={1}
 									ref={textAreaRef}
 									value={value}
@@ -90,7 +92,7 @@ const SendForm: FC = () => {
 								/>
 
 								{error && (
-									<div className={styles.textAreaErr}>{error?.message}</div>
+									<div className={styles.textAreaErrMess}>{error?.message}</div>
 								)}
 							</>
 						)}

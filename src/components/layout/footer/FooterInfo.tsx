@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FC } from 'react'
 import { FaFacebookF, FaInstagram, FaTelegramPlane } from 'react-icons/fa'
 
@@ -25,9 +26,9 @@ const FooterInfo: FC = () => {
 				<div>
 					<FaInstagram />
 				</div>
-				<div>
+				<Link href={`https://t.me/bilolbek199`} target={'_blank'}>
 					<FaTelegramPlane />
-				</div>
+				</Link>
 			</div>
 		</div>
 	)

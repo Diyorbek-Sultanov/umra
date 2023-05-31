@@ -1,0 +1,77 @@
+.detail {
+	@apply my-28;
+
+	.container {
+		@apply max-w-[1282px] mx-auto px-4;
+	}
+
+	.wrapper {
+		@apply grid grid-cols-3 gap-5 place-content-center;
+	}
+
+	.standartPlus,
+	.comfort,
+	.standart {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: white;
+		padding: 10px;
+		min-height: 600px;
+	}
+
+	.standartPlus {
+		background-image: linear-gradient(
+				to right,
+				rgba(7, 64, 101, 0.8) 60%,
+				rgba(65, 183, 250, 0.5) 87%
+			),
+			url('/images/umrah-1.jpg');
+		opacity: 0.8;
+	}
+
+	.comfort {
+		background-image: url('/images/umrah-2.jpg');
+	}
+
+	.standart {
+		background-image: url('/images/umrah-3.jpg');
+	}
+
+	.head {
+		@apply flex items-center justify-between border-b-2 p-3 border-gray-400;
+
+		span:nth-child(1) {
+			@apply text-lg opacity-90;
+		}
+	}
+
+	.body {
+		@apply mt-10;
+
+		.stars {
+			@apply flex items-center gap-2 mt-3 mb-3;
+		}
+
+		h4 {
+			@apply text-2xl mb-2 mt-3 font-semibold;
+		}
+
+		p {
+			@apply text-sm flex items-center gap-3 mb-6;
+		}
+	}
+
+	.footer {
+		@apply mt-8;
+
+		div {
+			svg {
+				@apply fill-white;
+			}
+			span {
+				@apply mt-2;
+			}
+		}
+	}
+}

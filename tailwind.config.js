@@ -23,6 +23,7 @@ module.exports = {
 				footer: '3fr 9fr',
 				responsiveMd: 'repeat(2, 300px)',
 				responsiveSm: 'repeat(1, 300px)',
+				responsiveLg: 'repeat(3, 300px)',
 				responsiveRevSm: 'repeat(1, 120px)',
 				responsiveRevMd: 'repeat(2, 120px)'
 			},

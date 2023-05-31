@@ -6,7 +6,7 @@
 	}
 
 	.wrapper {
-		@apply grid sm:grid-cols-responsiveSm md:grid-cols-responsiveMd  lg:grid-cols-4 place-content-center gap-7;
+		@apply grid sm:grid-cols-responsiveSm md:grid-cols-responsiveMd  lg:grid-cols-responsiveLg place-content-center gap-7;
 
 		.item {
 			.img {

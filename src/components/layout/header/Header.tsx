@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
 import { FC, useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
-import { BsFillTelephoneFill } from 'react-icons/bs'
 import { IoCloseSharp } from 'react-icons/io5'
 
 import styles from './Header.module.scss'
@@ -14,12 +14,14 @@ const Header: FC = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
-				<Image
-					src={'/images/header-logo.png'}
-					width={50}
-					height={50}
-					alt='Logo'
-				/>
+				<Link href={'/'}>
+					<Image
+						src={'/images/header-logo.png'}
+						width={50}
+						height={50}
+						alt='Logo'
+					/>
+				</Link>
 				<div className={styles.menu} onClick={() => setOpen(prev => !prev)}>
 					{open ? (
 						<IoCloseSharp fontSize={25} fill='white' />
