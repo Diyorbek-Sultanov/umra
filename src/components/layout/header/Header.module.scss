@@ -17,11 +17,15 @@
 		@apply md:flex md:items-center md:pb-0 pb-12 absolute -top-[490px] left-0 md:static md:z-auto -z-[-1] bg-black md:bg-inherit w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out;
 
 		.link {
-			@apply cursor-pointer text-white opacity-70 text-base md:text-sm hover:opacity-100 hover:text-orange transition-opacity md:ml-8 md:my-0 my-7 ease-in-out;
-		}
-	}
+			@apply cursor-pointer text-white  text-base md:text-lg hover:opacity-100 hover:text-orange transition-opacity md:ml-8 md:my-0 my-7 ease-in-out;
 
-	.active {
-		@apply top-[4.7rem];
+			a {
+				@apply mb-2;
+			}
+		}
+
+		&.listActive {
+			@apply top-[4.7rem];
+		}
 	}
 }

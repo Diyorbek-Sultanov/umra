@@ -30,7 +30,7 @@ const Galereya: FC = () => {
 					<AiOutlineClose fontSize={23} />
 				</div>
 			</div>
-			<section className={styles.galereya}>
+			<section className={styles.galereya} id='galereya'>
 				<div className={styles.photos}>
 					{[1, 2, 3, 4, 5, 6, 7].map(num => (
 						<div className={styles.item} key={num}>

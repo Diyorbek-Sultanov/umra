@@ -8,7 +8,7 @@ import SendForm from './SendForm'
 
 const Learn: FC = () => {
 	return (
-		<div className={styles.learn}>
+		<div className={styles.learn} id='umra'>
 			<div className={styles.wrapper}>
 				<div className={styles.big}></div>
 				<div className={styles.content}>

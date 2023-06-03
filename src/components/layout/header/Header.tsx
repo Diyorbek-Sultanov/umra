@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { FC, useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { IoCloseSharp } from 'react-icons/io5'
+import { Link as ScrollLink } from 'react-scroll'
 
 import styles from './Header.module.scss'
 import { navData } from './nav.data'
@@ -14,14 +15,14 @@ const Header: FC = () => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.container}>
-				<Link href={'/'}>
+				<ScrollLink to={'/'} spy smooth offset={-220} duration={800}>
 					<Image
 						src={'/images/header-logo.png'}
 						width={50}
 						height={50}
 						alt='Logo'
 					/>
-				</Link>
+				</ScrollLink>
 				<div className={styles.menu} onClick={() => setOpen(prev => !prev)}>
 					{open ? (
 						<IoCloseSharp fontSize={25} fill='white' />
@@ -31,12 +32,21 @@ const Header: FC = () => {
 				</div>
 				<ul
 					className={clsx(styles.list, {
-						[styles.active]: open === true
+						[styles.listActive]: open === true
 					})}
 				>
 					{navData.map((nav, index) => (
 						<li className={styles.link} key={index}>
-							{nav.label}
+							<ScrollLink
+								to={nav.route}
+								spy
+								smooth
+								offset={-220}
+								duration={1000}
+								onClick={() => setOpen(prev => !prev)}
+							>
+								{nav.label}
+							</ScrollLink>
 						</li>
 					))}
 				</ul>

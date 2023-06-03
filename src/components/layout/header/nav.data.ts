@@ -2,15 +2,15 @@ import { INavData } from '@/types/nav.types'
 
 export const navData: INavData[] = [
 	{
-		label: 'Home'
+		label: 'Haj',
+		route: 'hajj'
 	},
 	{
-		label: 'Haj'
+		label: 'Umra',
+		route: 'umra'
 	},
 	{
-		label: 'Umra'
-	},
-	{
-		label: 'Galereya'
+		label: 'Galereya',
+		route: 'galereya'
 	}
 ]

@@ -16,7 +16,7 @@ import Reviews from './reviews/Reviews'
 const Home: FC = () => {
 	return (
 		<Layout title='Home' description='the umra travel website home page'>
-			<div className={styles.home}>
+			<div className={styles.home} id='/'>
 				<div className={styles.wrapper}>
 					<div className={styles.content}>
 						<div>

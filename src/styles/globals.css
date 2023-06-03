@@ -19,3 +19,7 @@ body {
 	background-color: #f9b88e;
 	border-radius: 12px;
 }
+
+.active {
+	border-bottom: 2px solid #e5c409;
+}

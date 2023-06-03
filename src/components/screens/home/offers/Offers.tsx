@@ -6,7 +6,7 @@ import { offerData } from './offer.data'
 
 const Offers: FC = () => {
 	return (
-		<div className={styles.offer}>
+		<div className={styles.offer} id='hajj'>
 			<p className={styles.sub}>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, ab?
 			</p>
