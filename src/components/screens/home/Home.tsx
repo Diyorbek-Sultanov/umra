@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
 import Layout from '@/components/layout/Layout'
-import FooterForm from '@/components/layout/footer/FooterForm'
 import Heading from '@/components/ui/Heading/Heading'
 import Button from '@/components/ui/button/Button'
 
 import styles from './Home.module.scss'
+import Galereya from './galereya/Galereya'
 import Hotel from './hotel/Hotel'
 import Inclusive from './inclusive/Inclusive'
 import Learn from './learn/Learn'
@@ -24,16 +24,17 @@ const Home: FC = () => {
 							<p>Biz bilan hoziroq Hajj va Umra safarlariga otlaning</p>
 							<Button className={styles.btn}>Paket narxini bilish</Button>
 						</div>
-						<FooterForm />
 					</div>
 				</div>
 				<div className={styles.container}>
 					<Reviews />
-					<Heading>Hajj and Umrah Spicial Offers</Heading>
+					<Heading>Hajj va Umra paket narxlari</Heading>
 					<Offers />
+					<Heading>Galereya</Heading>
+					<Galereya />
 					<Detail />
 					<Hotel />
-					<Inclusive />
+					{/*<Inclusive />*/}
 					<Learn />
 				</div>
 			</div>

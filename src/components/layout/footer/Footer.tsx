@@ -10,16 +10,6 @@ const Footer: FC = () => {
 			<div className={styles.wrapper}>
 				<FooterInfo />
 				<div className={styles.content}>
-					<ul className={styles.list}>
-						<h2>Bosh</h2>
-						<li>Hajj & Umrah </li>
-						<li>Hajj & Umrah </li>
-					</ul>
-					<ul className={styles.list}>
-						<h2>Kompaniya haqida</h2>
-						<li>Hajj & Umrah </li>
-						<li>Hajj & Umrah </li>
-					</ul>
 					<Contact />
 				</div>
 			</div>

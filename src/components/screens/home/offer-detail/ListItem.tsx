@@ -11,7 +11,6 @@ const ListItem: FC<{ item: IDetailData }> = ({ item }) => {
 			<Image src={item.img} width={30} height={30} alt={item.title} />
 			<div>
 				<h6>{item.title}</h6>
-				<p>{item.descr}</p>
 			</div>
 		</li>
 	)

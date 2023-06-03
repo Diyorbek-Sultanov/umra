@@ -1,5 +1,5 @@
 .detail {
-	@apply mb-20;
+	@apply mb-40;
 
 	.wrapper {
 		@apply grid xl:grid-cols-offerDetail gap-x-9;
@@ -22,7 +22,7 @@
 			}
 
 			.list {
-				@apply flex items-center flex-wrap gap-10;
+				@apply grid grid-cols-1 gap-6;
 
 				.li {
 					@apply flex items-center gap-x-6;

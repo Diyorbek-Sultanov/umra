@@ -2,7 +2,7 @@
 	@apply bg-black text-white py-10 px-9;
 
 	.wrapper {
-		@apply grid lg:grid-cols-footer gap-x-4 px-3 place-items-center;
+		@apply grid mb-5 lg:grid-cols-footer gap-x-4 px-3 place-items-center;
 
 		.info {
 			@apply sm:w-[450px]  max-xs:mb-12 sm:mb-16;
@@ -38,7 +38,7 @@
 		}
 
 		.content {
-			@apply flex flex-wrap sm:justify-center gap-24;
+			@apply flex flex-wrap  sm:justify-center gap-24;
 
 			.list {
 				@apply flex flex-col gap-y-2;
@@ -53,9 +53,8 @@
 					@apply text-2xl font-semibold mb-4;
 				}
 
-				.address,
 				.tel {
-					@apply flex gap-x-2 mb-4 text-gray-400;
+					@apply flex justify-center gap-x-2 mb-4 text-gray-400;
 				}
 			}
 		}

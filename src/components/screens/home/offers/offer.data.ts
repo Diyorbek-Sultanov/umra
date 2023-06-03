@@ -6,26 +6,29 @@ export const offerData: IOfferData[] = [
 		img: '/images/hajj.jpg',
 		title: 'Hajj paket',
 		duration: '42-45',
-		type: 'Classic',
-		price: '15000',
-		slug: 'classic'
+		type: 'Ekonom',
+		price: '1500',
+		slug: 'ekonom',
+		hajjType: 'ekonom'
 	},
 	{
 		id: 2,
 		img: '/images/hajj.jpg',
 		title: 'Hajj paket',
 		duration: '42-45',
-		type: 'Biznes',
-		price: '15000',
-		slug: 'buisness'
+		type: 'Standart',
+		price: '1550',
+		slug: 'standart',
+		hajjType: 'standart'
 	},
 	{
 		id: 3,
 		img: '/images/hajj.jpg',
 		title: 'Hajj paket',
 		duration: '42-45',
-		type: 'Ekonom',
-		price: '15000',
-		slug: 'ekonom'
+		type: 'Kamford',
+		price: '1650',
+		slug: 'ekonom',
+		hajjType: 'kamfort'
 	}
 ]

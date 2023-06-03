@@ -6,4 +6,5 @@ export interface IOfferData {
 	price: string | number
 	duration: string
 	slug: string
+	hajjType: 'ekonom' | 'standart' | 'kamfort'
 }
