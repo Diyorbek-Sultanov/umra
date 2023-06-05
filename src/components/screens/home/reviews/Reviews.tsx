@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FC } from 'react'
 
 import styles from './Reviews.module.scss'
@@ -8,56 +9,34 @@ const Reviews: FC = () => {
 		<div className={styles.review}>
 			<div className={styles.wrapper}>
 				<div className={styles.item}>
-					<Image
-						src={'/images/facebook.png'}
-						width={120}
-						height={120}
-						alt='facebook'
-					/>
-					<div className={styles.star}>
-						<Image src={'/images/star.png'} width={20} height={20} alt='star' />
-						<p>5/5</p>
-					</div>
-					<span>3200 reviews</span>
+					<Link href={''}>
+						<Image
+							src={'/images/facebook.png'}
+							width={180}
+							height={180}
+							alt='facebook'
+						/>
+					</Link>
 				</div>
 				<div className={styles.item}>
-					<Image
-						src={'/images/facebook.png'}
-						width={120}
-						height={120}
-						alt='facebook'
-					/>
-					<div className={styles.star}>
-						<Image src={'/images/star.png'} width={20} height={20} alt='star' />
-						<p>5/5</p>
-					</div>
-					<span>3200 reviews</span>
+					<Link href={''}>
+						<Image
+							src={'/images/instagram.png'}
+							width={180}
+							height={180}
+							alt='instagram'
+						/>
+					</Link>
 				</div>
 				<div className={styles.item}>
-					<Image
-						src={'/images/facebook.png'}
-						width={120}
-						height={120}
-						alt='facebook'
-					/>
-					<div className={styles.star}>
-						<Image src={'/images/star.png'} width={20} height={20} alt='star' />
-						<p>5/5</p>
-					</div>
-					<span>3200 reviews</span>
-				</div>
-				<div className={styles.item}>
-					<Image
-						src={'/images/facebook.png'}
-						width={120}
-						height={120}
-						alt='facebook'
-					/>
-					<div className={styles.star}>
-						<Image src={'/images/star.png'} width={20} height={20} alt='star' />
-						<p>5/5</p>
-					</div>
-					<span>3200 reviews</span>
+					<Link href={''}>
+						<Image
+							src={'/images/telegram.png'}
+							width={180}
+							height={180}
+							alt='telegram'
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>

@@ -2,15 +2,11 @@
 	@apply my-20;
 
 	.wrapper {
-		@apply grid sm:grid-cols-responsiveRevSm md:grid-cols-responsiveRevMd lg:grid-cols-4 gap-6 max-sm:place-content-center lg:place-items-center;
+		@apply flex items-center gap-6 flex-wrap justify-center;
 
 		.item {
-			.star {
-				@apply flex items-center mb-2 gap-x-2;
-			}
-
-			span {
-				@apply text-gray-500 font-medium;
+			img {
+				@apply object-cover;
 			}
 		}
 	}
