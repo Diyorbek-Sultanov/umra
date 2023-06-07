@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
-import Button from '@/components/ui/button/Button'
-
 import { IOfferData } from '@/types/offer.types'
 
 import styles from './Offers.module.scss'
@@ -26,12 +24,6 @@ const OfferItem: FC<{ item: IOfferData }> = ({ item }) => {
 				<span>/1 kishiga</span>
 			</h5>
 			<p className={styles.durat}>Paket vaqti ({item.duration} kun)</p>
-			{/*<Button
-				className={styles.btn}
-				onClick={() => push(`offer-detail/${item.slug}`)}
-			>
-				Detail
-			</Button>*/}
 
 			{item.hajjType === 'ekonom' && (
 				<div className={styles.hajjType}>

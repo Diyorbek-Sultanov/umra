@@ -2,7 +2,7 @@
 	@apply mb-20;
 
 	.sub {
-		@apply text-gray-500 text-sm text-center mb-8;
+		@apply text-gray-500 text-sm md:text-base text-center mb-8 max-w-lg mx-auto leading-9 max-sm:leading-6;
 	}
 
 	.wrapper {

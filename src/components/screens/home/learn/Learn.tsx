@@ -14,11 +14,12 @@ const Learn: FC = () => {
 				<div className={styles.content}>
 					<h1>Umrani to'g'ri o'tkazishni o'rganing</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-						sit aperiam eius nostrum totam consectetur vel hic sapiente quam,
-						dolor suscipit, laudantium perspiciatis dolore aliquam maiores
-						ratione saepe minima, aut libero magnam? Soluta illum consequuntur
-						molestiae officia. Accusamus, laborum corporis.
+						Assalomu alaykum, buni kuzatib borish juda qiyin. Vaqti kelib, uning
+						ochilishiga hammamiz ergashamizmi yoki bu dono odam azob chekib,
+						maqtovchilarning dardi orqali qandaydir kattaroq sababni, ko‘pincha
+						kichikmi yoki erkin buyukroq narsani ko‘ra oladimi? Uni hal
+						qilgandan so'ng, muammoning vazifalari keladi. Biz uni tan jarohati
+						olganlikda ayblaymiz.
 					</p>
 					<Button className={styles.btn}>
 						<BsFillPlayFill fontSize={25} />
