@@ -1,10 +1,14 @@
+import { useMutation } from '@tanstack/react-query'
 import clsx from 'clsx'
-import { FC, useRef, useState } from 'react'
+import { FC, useRef } from 'react'
 import { Controller, SubmitHandler } from 'react-hook-form'
+import { toast } from 'react-hot-toast'
 
 import Heading from '@/components/ui/Heading/Heading'
 import Button from '@/components/ui/button/Button'
 import Field from '@/components/ui/input/Field'
+
+import { AppService } from '@/services/app.service'
 
 import { ISendForm } from '@/types/sendForm.types'
 
@@ -14,17 +18,29 @@ import { useCustomForm } from '@/hooks/useCustomForm'
 import { validEmail } from '@/utils/valid-email'
 
 const SendForm: FC = () => {
+	const { mutateAsync, isLoading, error } = useMutation(
+		(data: ISendForm) => AppService.application(data),
+		{
+			onError: (error: Error) => {
+				toast.error(error.message)
+			},
+			onSuccess: data => {
+				toast.success("Ariza jo'natildi!")
+				console.log(data)
+			}
+		}
+	)
 	const { register, reset, handleSubmit, errors, control, watch } =
 		useCustomForm()
 
 	const textAreaRef = useRef<HTMLTextAreaElement>(null)
 
-	const value = watch('comment')
+	const value = watch('message')
 
 	useAutoSizeArea(textAreaRef.current, value)
 
 	const onSubmitHandler: SubmitHandler<ISendForm> = data => {
-		console.log(data)
+		mutateAsync(data)
 		reset()
 	}
 
@@ -50,10 +66,10 @@ const SendForm: FC = () => {
 						className={styles.field}
 						type={'tel'}
 						placeholder='Telefon raqamingiz'
-						{...register('phoneNumber', {
+						{...register('phone_number', {
 							required: "Bu joyni to'ldiring"
 						})}
-						error={errors.phoneNumber}
+						error={errors.phone_number}
 					/>
 				</label>
 				<label className={styles.label}>
@@ -75,7 +91,7 @@ const SendForm: FC = () => {
 				<label className={styles.label}>
 					<span>Izoh</span>
 					<Controller
-						name='comment'
+						name='message'
 						control={control}
 						rules={{ required: "Bu joyni to'ldiring" }}
 						render={({ field: { value, onChange }, fieldState: { error } }) => (
@@ -98,7 +114,7 @@ const SendForm: FC = () => {
 						)}
 					/>
 				</label>
-				<Button className={styles.btn} type={'submit'}>
+				<Button className={styles.btn} type={'submit'} disabled={isLoading}>
 					Jo'natish
 				</Button>
 			</form>

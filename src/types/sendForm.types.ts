@@ -1,6 +1,8 @@
 export interface ISendForm {
 	name: string
-	phoneNumber: string | number
+	phone_number: string | number
 	email: string
-	comment: string
+	message: string
 }
+
+export interface IResponseData extends ISendForm {}

@@ -17,6 +17,7 @@ const Meta: FC<PropsWithChildren<IMeta>> = ({
 				<meta name='description' content={description} />
 				<meta name='og:title' content={getTitle(title)} />
 				<meta name='og:description' content={description} />
+				<link rel='canonical' href={process.env.NEXT_SITE_URL} />
 			</Head>
 			{children}
 		</>

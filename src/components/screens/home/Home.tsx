@@ -7,7 +7,6 @@ import Button from '@/components/ui/button/Button'
 import styles from './Home.module.scss'
 import Galereya from './galereya/Galereya'
 import Hotel from './hotel/Hotel'
-import Inclusive from './inclusive/Inclusive'
 import Learn from './learn/Learn'
 import Detail from './offer-detail/Detail'
 import Offers from './offers/Offers'
@@ -15,7 +14,7 @@ import Reviews from './reviews/Reviews'
 
 const Home: FC = () => {
 	return (
-		<Layout title='Home' description='the umra travel website home page'>
+		<Layout title='Umra travel' description='the umra travel website home page'>
 			<div className={styles.home} id='/'>
 				<div className={styles.wrapper}>
 					<div className={styles.content}>
@@ -34,7 +33,6 @@ const Home: FC = () => {
 					<Galereya />
 					<Detail />
 					<Hotel />
-					{/*<Inclusive />*/}
 					<Learn />
 				</div>
 			</div>

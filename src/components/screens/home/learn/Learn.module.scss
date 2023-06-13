@@ -55,7 +55,7 @@
 			}
 
 			.btn {
-				@apply bg-green-400 rounded-md py-3 px-5 text-white text-base transition-all ease-in hover:bg-green-500 focus:shadow-2xl;
+				@apply bg-green-400 rounded-md py-3 px-5 text-white text-base transition-all ease-in hover:bg-green-500 focus:shadow-2xl disabled:opacity-50;
 			}
 		}
 	}

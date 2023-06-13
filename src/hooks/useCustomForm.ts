@@ -13,9 +13,9 @@ export const useCustomForm = () => {
 	} = useForm<ISendForm>({
 		defaultValues: {
 			name: '',
-			comment: '',
+			message: '',
 			email: '',
-			phoneNumber: ''
+			phone_number: ''
 		},
 		mode: 'onChange'
 	})
